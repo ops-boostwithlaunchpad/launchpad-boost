@@ -40,7 +40,7 @@ export default function Navbar() {
 
         {/* Desktop CTA */}
         <Link
-          href="https://boostwithlaunchpad.com/contact"
+          href="https://boostwithlaunchpad.com"
           className="hidden md:inline-flex btn btn-primary"
         >
           Get Started
@@ -101,7 +101,7 @@ export default function Navbar() {
               Requests
             </Link>
             <Link
-              href="https://boostwithlaunchpad.com/contact"
+              href="https://boostwithlaunchpad.com"
               onClick={() => setMenuOpen(false)}
               className="btn btn-primary w-[85%] max-w-[320px] mt-8 justify-center"
             >

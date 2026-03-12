@@ -338,7 +338,7 @@ export default function FeaturesPage() {
             your leads, revenue, and online visibility.
           </p>
           <a
-            href="https://boostwithlaunchpad.com/contact"
+            href="https://boostwithlaunchpad.com"
             className="inline-flex items-center justify-center px-8 py-4 bg-[#7C3AED] text-white font-semibold rounded-xl text-base hover:bg-[#6D28D9] transition-colors cursor-pointer"
           >
             Book Your Free Strategy Call

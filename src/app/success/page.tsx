@@ -16,7 +16,7 @@ export default function SuccessPage() {
 
   const handleBookCall = () => {
     if (callBooked) return;
-    window.open("https://boostwithlaunchpad.com/contact", "_blank");
+    window.open("https://boostwithlaunchpad.com", "_blank");
     setCallBooked(true);
     localStorage.setItem("lp_call_booked", "true");
   };

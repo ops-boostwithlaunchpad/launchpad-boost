@@ -75,7 +75,7 @@ export default function HomeClient() {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            <a href="https://boostwithlaunchpad.com/contact" className="btn btn-primary text-lg px-8 py-3.5">
+            <a href="https://boostwithlaunchpad.com" className="btn btn-primary text-lg px-8 py-3.5">
               Get Started Now
             </a>
             <button
