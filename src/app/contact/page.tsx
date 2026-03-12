@@ -170,7 +170,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* ── Calendly Discovery Call ────────────────────────── */}
+      {/* ── Discovery Call ─────────────────────────────────── */}
       <section className="py-16 bg-white">
         <div className="max-w-[720px] mx-auto px-8">
           <div className="rounded-2xl border-l-4 border-[#7C3AED] bg-[#F8FAFC] p-8 md:p-10">
@@ -182,17 +182,12 @@ export default function ContactPage() {
               team. We&rsquo;ll review your current marketing, identify quick
               wins, and map out a growth plan &mdash; no strings attached.
             </p>
-            <button
-              onClick={() => {
-                const win = window as unknown as Record<string, { initPopupWidget: (opts: { url: string }) => void }>;
-                if (win.Calendly) {
-                  win.Calendly.initPopupWidget({ url: "https://calendly.com/ops-boostwithlaunchpad/30min" });
-                }
-              }}
+            <a
+              href="https://boostwithlaunchpad.com/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-[#7C3AED] text-white font-semibold rounded-xl text-base hover:bg-[#6D28D9] transition-colors"
             >
               Book a Discovery Call
-            </button>
+            </a>
           </div>
         </div>
       </section>

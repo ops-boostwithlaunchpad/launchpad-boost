@@ -16,10 +16,7 @@ export default function SuccessPage() {
 
   const handleBookCall = () => {
     if (callBooked) return;
-    const win = window as unknown as Record<string, { initPopupWidget: (opts: { url: string }) => void }>;
-    if (win.Calendly) {
-      win.Calendly.initPopupWidget({ url: "https://calendly.com/ops-boostwithlaunchpad/30min" });
-    }
+    window.open("https://boostwithlaunchpad.com/contact", "_blank");
     setCallBooked(true);
     localStorage.setItem("lp_call_booked", "true");
   };

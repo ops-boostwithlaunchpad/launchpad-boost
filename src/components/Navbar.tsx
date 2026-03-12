@@ -4,17 +4,9 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-
-  const calendlyUrl = "https://calendly.com/ops-boostwithlaunchpad/30min";
-
-  const openCalendly = () => {
-    const win = window as unknown as Record<string, { initPopupWidget: (opts: { url: string }) => void }>;
-    if (win.Calendly) {
-      win.Calendly.initPopupWidget({ url: calendlyUrl });
-    }
-  };
 
   return (
     <header className="h-[80px] bg-white border-b border-[#F1F5F9] fixed top-0 left-0 w-full z-[1000]">
@@ -47,12 +39,12 @@ export default function Navbar() {
         </nav>
 
         {/* Desktop CTA */}
-        <button
-          onClick={openCalendly}
+        <Link
+          href="https://boostwithlaunchpad.com/contact"
           className="hidden md:inline-flex btn btn-primary"
         >
           Get Started
-        </button>
+        </Link>
 
         {/* Mobile Toggle */}
         <button
@@ -108,15 +100,13 @@ export default function Navbar() {
             >
               Requests
             </Link>
-            <button
-              onClick={() => {
-                setMenuOpen(false);
-                openCalendly();
-              }}
+            <Link
+              href="https://boostwithlaunchpad.com/contact"
+              onClick={() => setMenuOpen(false)}
               className="btn btn-primary w-[85%] max-w-[320px] mt-8 justify-center"
             >
               Get Started
-            </button>
+            </Link>
           </div>
         )}
       </div>

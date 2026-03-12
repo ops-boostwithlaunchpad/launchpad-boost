@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import CalendlyButton from "@/components/CalendlyButton";
 
 export const metadata = {
   title: "Reviews — Launchpad Boost",
@@ -148,9 +147,12 @@ export default function ReviewsPage() {
             Book a free strategy call and find out how we can deliver the same
             results for your business.
           </p>
-          <CalendlyButton className="inline-flex items-center justify-center px-8 py-4 bg-[#7C3AED] text-white font-semibold rounded-xl text-base hover:bg-[#6D28D9] transition-colors cursor-pointer">
+          <a
+            href="https://boostwithlaunchpad.com/contact"
+            className="inline-flex items-center justify-center px-8 py-4 bg-[#7C3AED] text-white font-semibold rounded-xl text-base hover:bg-[#6D28D9] transition-colors cursor-pointer"
+          >
             Book Your Free Strategy Call
-          </CalendlyButton>
+          </a>
         </div>
       </section>
 

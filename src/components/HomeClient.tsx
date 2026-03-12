@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 
-const calendlyUrl = "https://calendly.com/ops-boostwithlaunchpad/30min";
-
 const features = [
   {
     icon: "\uD83D\uDCCD",
@@ -52,13 +50,6 @@ const stats = [
 export default function HomeClient() {
   const [showDemo, setShowDemo] = useState(false);
 
-  const openCalendly = () => {
-    const win = window as unknown as Record<string, { initPopupWidget: (opts: { url: string }) => void }>;
-    if (win.Calendly) {
-      win.Calendly.initPopupWidget({ url: calendlyUrl });
-    }
-  };
-
   return (
     <>
       {/* ── Hero Section ── */}
@@ -84,9 +75,9 @@ export default function HomeClient() {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            <button onClick={openCalendly} className="btn btn-primary text-lg px-8 py-3.5">
+            <a href="https://boostwithlaunchpad.com/contact" className="btn btn-primary text-lg px-8 py-3.5">
               Get Started Now
-            </button>
+            </a>
             <button
               onClick={() => setShowDemo(true)}
               className="btn btn-outline text-lg px-8 py-3.5"
